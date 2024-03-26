@@ -1,0 +1,104 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.84,
+      "y": 4.41
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "shootCmd"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "3NoteBottomPath1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intakeCmd"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "3NoteBottomPath2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Note3Ang"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shootCmd"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "3NoteBottomPath3"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "resetArm"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "3NoteBottomPath3.5"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "intakeCmd"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "3NoteBottomPath4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "iiylsd"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "shootCmd"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
